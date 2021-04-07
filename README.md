@@ -51,6 +51,8 @@ gem install rails -v 6.1.1
 git clone https://github.com/Grupinix/SMUSRS-rails.git
 ```
 
+Na primeira vez que clonar o repositório, rode ```yarn install```, para que o yarn possa baixar todas as dependências necessárias para a aplicação.
+
 ## Executando o projeto
 Sempre que for executar o projeto, dê um git pull antes em development para sempre ter o projeto atualizado em sua máquina!
 
@@ -59,6 +61,9 @@ git checkout development
 git pull origin development
 ```
 
-Para iniciar o servidor, simplesmente rode ```rails s``` no seu terminal.
+Além disso, execute ```rails db:migrate``` pois podem existir novas migrações a serem inseridas em seu banco de dados.
 
-Para acessar a home do projeto, entre em ```localhost:3000```.
+Para iniciar o servidor, simplesmente rode ```rails s``` em uma aba do seu terminal, e em outra, execute o webpack, que gerencia todas os CSS e JS da aplicação,
+rodando ```./bin/webpack-dev-server```.
+
+Para acessar a home do projeto, entre em ```http:://localhost:3000```.
