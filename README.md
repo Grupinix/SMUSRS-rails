@@ -24,7 +24,7 @@ sudo apt-get update
 sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn
 ```
 
-- Instalar o rbenv para instalar o Ruby:
+- Instale o rbenv para instalar o Ruby:
 
 ```bash
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -40,13 +40,13 @@ rbenv install 3.0.0
 rbenv global 3.0.0
 ```
 
-- Instalar o Rails:
+- Instale o Rails:
 
 ```bash
 gem install rails -v 6.1.1
 ```
 
-- Clone o repositório:
+- Clone o repositório (escolha o melhor lugar em sua máquina):
 ```bash
 git clone https://github.com/Grupinix/SMUSRS-rails.git
 ```
