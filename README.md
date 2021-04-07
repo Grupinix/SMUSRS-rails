@@ -10,7 +10,7 @@ O SMUSRS-rails é o Sistema de Mapeamento de Usuários de Serviços Relacionados
 - Rails 6
 
 ## Instalação
-### Para executar o SMUSRS-rails:
+### Para instalar o SMUSRS-rails:
 
 - Instale todas as dependencias para instalar o rbenv:
 
