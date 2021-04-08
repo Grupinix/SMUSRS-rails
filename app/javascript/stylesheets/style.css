@@ -1,5 +1,5 @@
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'RobotoMono', sans-serif;
   }
   /*--------------------------------------------------------------
   # Navigation Menu
@@ -23,7 +23,7 @@ body{
   .navbar-toggler{
     outline: none!important;
   }
-   
+
   /*--------------------------------------------------------------
   # Hero Section
   --------------------------------------------------------------*/
@@ -33,11 +33,11 @@ body{
       background-size: cover;
       position: relative;
     }
-    
+
     #hero .container {
       padding-top: 80px;
     }
-    
+
     #hero:before {
       content: "";
       background: rgba(0, 0, 0, 0.6);
@@ -47,7 +47,7 @@ body{
       left: 0;
       right: 0;
     }
-    
+
     #hero h1 {
       margin: 0 0 10px 0;
       font-size: 48px;
@@ -55,7 +55,7 @@ body{
       line-height: 56px;
       color: #fff;
     }
-    
+
     #hero h2 {
       color: #eee;
       margin-bottom: 40px;
@@ -65,7 +65,7 @@ body{
       letter-spacing: 0.5px;
       text-transform: uppercase;
     }
-    
+
     .main-btn {
         font-family: "Poppins", sans-serif;
         text-transform: uppercase;
@@ -80,14 +80,14 @@ body{
         border: 2px solid #fff;
         color: #fff;
     }
-    
+
      .main-btn:hover {
       background-image: linear-gradient(135deg, #6e8efb, #a777e3);
       border: 2px solid linear-gradient(135deg, #6e8efb, #a777e3);
       text-decoration: none;
       color:#fff;
     }
-     
+
     /*--------------------------------------------------------------
   # Services
   --------------------------------------------------------------*/
@@ -98,7 +98,7 @@ body{
       background: linear-gradient(135deg, #6e8efb, #a777e3);
       box-shadow: linear-gradient(135deg, #6e8efb, #a777e3);
     }
-    
+
    .service .icon {
       margin: 0 auto;
       width: 64px;
@@ -111,56 +111,56 @@ body{
       background: #f5f5f5;
       border-radius: 50px;
     }
-    
+
      .service .icon i {
       font-size: 32px;
       transition: 0.5s;
       line-height: 1;
       position: relative;
     }
-    
+
      .service h4 {
       font-weight: 600;
       margin: 10px 0 15px 0;
       font-size: 22px;
     }
-    
+
      .service h4 a {
       color:black;
       transition: ease-in-out 0.3s;
     }
-    
+
      .service p {
       line-height: 24px;
       font-size: 14px;
       margin-bottom: 0;
     }
-    
+
       .services i{
       color: #6e8efb;
     }
-   
-    
+
+
     .about-heading {
       text-transform: uppercase;
     }
-    
+
     .about-heading .about-heading-upper {
       display: block;
       font-size: 1rem;
       font-weight: 800;
     }
-    
+
     .about-heading .about-heading-lower {
       display: block;
       font-size: 38px;
       font-weight: 100;
     }
-    
+
     .bg-faded {
       background-color: linear-gradient(135deg, #6e8efb, #a777e3);
     }
-  
+
     .about-button .btn-color{
       background: linear-gradient(135deg, #6e8efb, #a777e3);
       font-weight: bold;
@@ -169,7 +169,7 @@ body{
     .about {
       position: relative;
     }
-    
+
     @media (min-width: 992px) {
       .about .about-img {
         width: 75%;
@@ -188,13 +188,13 @@ body{
         bottom: -2rem;
       }
     }
-    
+
     @media (min-width: 1200px) {
       .about .about-text {
         width: 45%;
       }
     }
-    
+
   /* ==================================================
     Medical Camp Sction
     ================================================== */
@@ -202,28 +202,28 @@ body{
       background-color: linear-gradient(135deg, #6e8efb, #a777e3);
       padding-bottom: 0;
     }
-    
+
     .camp h2 {
       color: #000;
       margin-bottom: 25px;
     }
-    
+
     .camp-grid {
       margin-top: 65px;
     }
-    
+
     .camp-grid .row {
       margin: 0;
     }
-    
+
     .camp-grid .row > div {
       padding: 0;
     }
-    
+
     .camp-grid .row > div .card img {
       width: 100%;
     }
-    
+
     .camp-grid .row > div .card .camp-text {
       position: absolute;
       display: table-cell;
@@ -238,24 +238,24 @@ body{
       visibility: hidden;
       transition: all 0.3s ease;
     }
-    
+
     .camp-grid .row > div .card .camp-text > div {
       position: relative;
       top: 50%;
       transform: translateY(-50%);
     }
-    
+
     .camp-grid .row > div .card .camp-text .card-title {
       color: #fff;
       font-size: 30px;
     }
-    
+
     .camp-grid .row > div .card .camp-text .card-text {
       color: #fff;
       opacity: .75;
       padding: 0 45px;
     }
-    
+
     .camp-grid .row > div .card:hover .camp-text {
       opacity: 1;
       visibility: visible;
@@ -266,7 +266,7 @@ body{
   .team {
       background: #fff;
     }
-    
+
     .team .member {
       position: relative;
       box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -274,29 +274,29 @@ body{
       border-radius: 10px;
       text-align: center;
     }
-    
+
     .team .member .image {
       overflow: hidden;
       width: 150px;
       border-radius: 50%;
       margin: 0 auto 20px auto;
     }
-    
+
     .team .member .image img {
       transition: ease-in-out 0.3s;
     }
-    
+
     .team .member:hover img {
       transform: scale(1.1);
     }
-    
+
     .team .member h4 {
       font-weight: 700;
       margin-bottom: 5px;
       font-size: 20px;
       color: #36343a;
     }
-    
+
     .team .member span {
       display: block;
       font-size: 15px;
@@ -304,7 +304,7 @@ body{
       position: relative;
       font-weight: 500;
     }
-    
+
     .team .member span::after {
       content: '';
       position: absolute;
@@ -316,19 +316,19 @@ body{
       left: 50%;
       transform: translateX(-50%);
     }
-    
+
     .team .member p {
       margin: 10px 0 0 0;
       font-size: 14px;
     }
-    
+
     .team .member .social {
       margin-top: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    
+
     .team .member .social a {
       transition: ease-in-out 0.3s;
       display: flex;
@@ -338,19 +338,19 @@ body{
       width: 32px;
       height: 32px;
       background: linear-gradient(135deg, #6e8efb, #a777e3);
-      
+
     }
-    
+
     .team .member .social a i {
       color: #fff;
       font-size: 16px;
       margin: 0 2px;
     }
-    
+
     .team .member .social a:hover {
       background: linear-gradient(135deg, #6e8efb, #a777e3);
     }
-    
+
     .team .member .social a + a {
       margin-left: 8px;
     }
@@ -364,21 +364,21 @@ body{
       padding: 20px 0 30px 0;
       background:linear-gradient(135deg, #6e8efb, #a777e3);
     }
-    
+
     .contact-box i {
       font-size: 32px;
       color: white;
       border-radius: 50%;
       padding: 8px;
     }
-    
+
     .contact-box h3 {
       font-size: 20px;
       color: #000;
       font-weight: bold;
       margin: 10px 0;
     }
-    
+
     .contact-box p {
       padding: 0;
       line-height: 24px;
@@ -390,12 +390,12 @@ body{
       border: none;
       padding: 10px;
     }
-  
+
    .contact button:hover{
      background: linear-gradient(135deg, #6e8efb, #a777e3);
      color: #fff;
-   } 
-   
+   }
+
   /*--------------------------------------------------------------
   # Footer
   --------------------------------------------------------------*/
@@ -411,6 +411,5 @@ body{
   .footer .text{
     color: #000;
   }
-  
-  
-  
+
+
