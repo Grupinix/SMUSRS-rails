@@ -28,18 +28,6 @@
                   <li class="nav-item"><a class="nav-link"
                      href="#projects">Time</a></li>
                   <li class="nav-item"><a class="nav-link" href="denuncia.html">Denúncia</a></li>
-                  <% if user_signed_in? %>
-                    <li class="nav-item active">
-                      <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "nav-link" %>
-                    </li>
-                  <% else %>
-                    <li class="nav-item active">
-                      <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-                    </li>
-                    <li class="nav-item active">
-                      <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
-                    </li>
-                  <% end %>
               </ul>
           </div>
       </div>
@@ -51,7 +39,7 @@
     <div class="container text-center position-relative">
       <h1>Juntos na batalha contra o HIV!</h1>
       <h2>Serviço disponível 24 horas.</h2>
-      <a href="cadastro.html" class="main-btn">Meu perfil</a>
+      <%= link_to "Meu perfil", dashboard_path, class: "main-btn" %>
     </div>
   </section><!-- End Hero -->
 
