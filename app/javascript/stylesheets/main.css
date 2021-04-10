@@ -34,20 +34,21 @@ main .main-content {
   width: 40%;
 }
 
-.panel-row button {
+.panel-row a {
   height: 180px;
   background: linear-gradient(135deg, #6e8efb, #a777e3);
   font-size: 22px;
   color: #fff;
 }
-.panel-row button sbg{
+.panel-row a sbg{
   margin-bottom: 10px;
   font-size: 30px;
 }
 
-.panel-row button:hover {
+.panel-row a:hover {
   transform: scale(1.05);
   transition: 0.2s;
+  text-decoration: none;
 }
 
 div#ajax-content {

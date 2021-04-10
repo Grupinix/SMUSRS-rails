@@ -22,23 +22,23 @@
           <ul>
             <li class="selected">
               <i class="fas fa-home"></i>
-              <a href="dashboard.html"> Dashboard</a>
+              <%= link_to "Dashboard", dashboard_path %>
             </li>
             <li>
               <i class="fas fa-user"></i>
-              <%= link_to "Perfil", perfil_path %>
+              <%= link_to "Perfil", dashboard_perfil_path %>
             </li>
             <li>
               <i class="fas fa-file-alt"></i>
-              <a href="historico.html"> Hístorico</a>
+              <a href="#"> Hístorico</a>
             </li>
             <li>
               <i class="fas fa-file-medical"></i>
-              <a href="gerenciarconsulta.html"> Consultas</a>
+              <%= link_to "Consultas", appointments_path %>
             </li>
             <li>
               <i class="fas fa-stethoscope"></i>
-              <a href="exames.html"> Exames</a>
+              <%= link_to "Exames", exams_path %>
             </li>
           </ul>
         </div>

@@ -1,0 +1,28 @@
+<div class="main-content-title">
+  <h2>PRÓXIMA CONSULTA</h2>
+</div>
+
+<br>
+
+<h5>Nome</h5>
+<div><%= @appointment.name %></div>
+
+<br>
+
+<h5>Título</h5>
+<div><%= @appointment.title %></div>
+
+<br>
+
+<h5>Descrição</h5>
+<div><%= @appointment.description %></div>
+
+<br>
+
+<h5>Endereço</h5>
+<div><%= @appointment.address %></div>
+
+<br>
+
+<h5>Data da Consulta</h5>
+<div><%= @appointment.date.strftime("%d/%m/%Y as %H:%M") %></div>

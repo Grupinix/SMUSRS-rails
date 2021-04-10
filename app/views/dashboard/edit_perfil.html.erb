@@ -2,7 +2,7 @@
   <h2>EDITAR PERFIL</h2>
 </div>
 
-<%= simple_form_for(@user, method: :patch, url: editar_perfil_path) do |f| %>
+<%= simple_form_for(@user, method: :patch, url: dashboard_editar_perfil_path) do |f| %>
   <div class="form-group">
     <%= f.input :name, label: 'Nome', placeholder: "Nome Completo" %>
   </div>
