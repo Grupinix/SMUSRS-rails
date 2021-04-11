@@ -38,3 +38,11 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# Ignore intellij
+/.idea
+/shelf/
+/workspace.xml
+/dataSources/
+/dataSources.local.xml
+/httpRequests/
