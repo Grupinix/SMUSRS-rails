@@ -20,7 +20,7 @@ class AppointmentsController < DashboardController
 
   def next_appointment
     if @user.appointments.any?
-      @appointment = @user.appointments.sort_by(&:date).first
+      @appointment = @user.appointments.where("date > ?", Date.today).sort_by(&:date).first
     else
       redirect_to(appointments_path)
     end

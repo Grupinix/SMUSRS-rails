@@ -20,7 +20,7 @@ class ExamsController < DashboardController
 
   def next_exam
     if @user.exams.any?
-      @exam = @user.exams.sort_by(&:date).first
+      @exam = @user.exams.where("date > ?", Date.today).sort_by(&:date).first
     else
       redirect_to(exams_path)
     end

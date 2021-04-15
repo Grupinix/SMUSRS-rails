@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   get 'dashboard/perfil', to: 'dashboard#perfil'
   get 'dashboard/editar-perfil', to: 'dashboard#edit_perfil'
   patch 'dashboard/editar-perfil', to: 'dashboard#update_perfil'
+  get 'sobre', to: 'static#about', as: :about
+  get 'denuncia', to: 'static#report', as: :report
 
   resources :appointments, path: 'dashboard/consultas' do
     get 'proxima-consulta', on: :collection, to: 'appointments#next_appointment'
