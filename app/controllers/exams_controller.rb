@@ -1,6 +1,7 @@
 class ExamsController < DashboardController
   before_action :authenticate_user!
-  before_action :set_user, only: [:new, :create, :next_exam]
+  before_action :set_user, only: [:new, :create, :next_exam, :my_exams]
+  before_action :set_exam, only: [:show, :edit, :update, :destroy]
 
   def index; end
 
@@ -12,10 +13,29 @@ class ExamsController < DashboardController
     @exam = @user.exams.new(exam_params)
 
     if @exam.save
-      redirect_to(dashboard_path)
+      redirect_to(meus_exames_exams_path)
     else
       render :new
     end
+  end
+
+  def show; end
+
+  def edit; end
+
+  def update
+    if @exam.update(exam_params)
+      redirect_to meus_exames_exams_path
+    else
+      render :new
+    end
+  end
+
+  def destroy
+    @exam.destroy
+    redirect_to meus_exames_exams_path
+  rescue ActiveRecord::StatementInvalid
+    redirect_to meus_exames_exams_path
   end
 
   def next_exam
@@ -26,13 +46,21 @@ class ExamsController < DashboardController
     end
   end
 
+  def my_exams
+    @exams = @user.exams
+  end
+
   private
 
   def set_user
     @user = current_user
   end
 
+  def set_exam
+    @exam = current_user.exams.find(params[:id])
+  end
+
   def exam_params
-    params.require(:exam).permit(:name, :title, :description, :address, :date)
+    params.require(:exam).permit(:pacient, :title, :doctor, :description, :address, :date)
   end
 end

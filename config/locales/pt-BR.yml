@@ -225,3 +225,19 @@ pt-BR:
       long: "%d de %B de %Y, %H:%M"
       short: "%d de %B, %H:%M"
     pm: ''
+  activerecord:
+    attributes:
+      appointment:
+        pacient: Paciente
+        title: Título
+        doctor: Médico
+        description: Descrição
+        address: Endereço
+        date: Data
+      exam:
+        pacient: Paciente
+        title: Título
+        doctor: Médico
+        description: Descrição
+        address: Endereço
+        date: Data

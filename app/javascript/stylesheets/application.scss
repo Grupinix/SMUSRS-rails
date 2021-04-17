@@ -3,8 +3,20 @@
 @import "register";
 @import "fonts";
 @import "login";
+@import "main";
 @import "sidebar";
 @import "main";
 @import "header";
 @import "sobre";
-@import "denuncia"
+@import "denuncia";
+@import "historico";
+
+.i-white {
+  color: white;
+}
+
+.btn-blue {
+  color: white;
+  background-color: #6e8efb;
+  border-color: #6e8efb;
+}

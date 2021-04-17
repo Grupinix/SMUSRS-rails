@@ -1,6 +1,6 @@
 class DashboardController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_user, only: [:perfil, :edit_perfil, :update_perfil]
+  before_action :set_user, only: [:perfil, :edit_perfil, :update_perfil, :history]
 
   layout 'dashboard'
 
@@ -16,6 +16,11 @@ class DashboardController < ApplicationController
     else
       render :edit_perfil
     end
+  end
+
+  def history
+    @appointments = @user.appointments.sort_by(&:date)
+    @exams = @user.exams.sort_by(&:date)
   end
 
   private

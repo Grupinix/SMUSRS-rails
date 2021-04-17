@@ -13,11 +13,12 @@
 ActiveRecord::Schema.define(version: 2021_04_10_004402) do
 
   create_table "appointments", force: :cascade do |t|
-    t.string "name"
-    t.string "title"
+    t.string "pacient", null: false
+    t.string "title", null: false
+    t.string "doctor"
     t.text "description"
-    t.string "address"
-    t.datetime "date"
+    t.string "address", null: false
+    t.datetime "date", null: false
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -25,11 +26,12 @@ ActiveRecord::Schema.define(version: 2021_04_10_004402) do
   end
 
   create_table "exams", force: :cascade do |t|
-    t.string "name"
-    t.string "title"
+    t.string "pacient", null: false
+    t.string "title", null: false
+    t.string "doctor"
     t.text "description"
-    t.string "address"
-    t.datetime "date"
+    t.string "address", null: false
+    t.datetime "date", null: false
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

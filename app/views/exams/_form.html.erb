@@ -1,10 +1,14 @@
 <%= simple_form_for(@exam) do |f| %>
   <div class="form-group">
-    <%= f.input :name, label: 'Nome', placeholder: "Nome completo" %>
+    <%= f.input :pacient, label: 'Nome do Paciente', placeholder: "Nome completo" %>
   </div>
 
   <div class="form-group">
     <%= f.input :title, label: 'Título', placeholder: "Título do exame" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.input :doctor, label: 'Nome do Médico', placeholder: "Nome do médico" %>
   </div>
 
   <div class="form-group">
@@ -19,5 +23,5 @@
     <%= f.input :date, label: 'Data do Exame' %>
   </div>
 
-  <%= f.submit 'Criar Exame' %>
+  <%= button_tag "#{f.object.persisted? ? 'Atualizar Exame' : 'Criar Exame'}", class: "btn btn-blue waves-effect waves-light mr-1" %>
 <% end %>
