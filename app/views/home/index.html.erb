@@ -17,7 +17,7 @@
           <div class="icon">
               <i class="fas fa-question"></i>
           </div>
-          <h4><a href="">Informações</a></h4>
+          <h4><%= link_to "Informações", about_path %></h4>
           <p>Aqui você irá encontrar todas informações necessárias para auxiliar o tratamento contra o HIV!</p>
         </div>
       </div>
@@ -26,7 +26,7 @@
           <div class="icon">
               <i class="fas fa-user-lock"></i>
           </div>
-          <h4><a href="cadastro.html">Acesse sua conta!</a></h4>
+          <h4><%= link_to "Acesse sua conta!", dashboard_path %></h4>
           <p>Entre aqui para acessar a sua conta e ter informações sobre o seu tratamento!</p>
         </div>
       </div>
@@ -34,10 +34,10 @@
       <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
         <div class="service shadow">
           <div class="icon">
-              <i class="fas fa-hospital"></i>
+              <i class="fas fa-hand-holding-heart"></i>
           </div>
-          <h4><a href="">Hospitais</a></h4>
-          <p>Encontre o hospital mais próximo para realizar o seu tratamento!</p>
+          <h4><%= link_to "Sobre o projeto", services_path %></h4>
+          <p>Entre aqui para saber como vamos te ajudar no combate a doença!</p>
         </div>
       </div>
     </div>
