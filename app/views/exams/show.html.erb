@@ -21,6 +21,12 @@
   <br>
 <% end %>
 
+<% if @exam.prescription_url? %>
+  <h5>Link da Receita</h5>
+  <div><%= link_to "Clique aqui", @exam.prescription_url %></div>
+
+  <br>
+<% end %>
 
 <% if @exam.description? %>
   <h5>Descrição</h5>

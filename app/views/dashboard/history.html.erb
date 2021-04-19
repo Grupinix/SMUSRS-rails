@@ -21,7 +21,13 @@
             <td><%= appointment.date.strftime("%d/%m/%Y") %></td>
             <td><%= appointment.date.strftime("%H:%M") %></td>
             <td><%= appointment.address %></td>
-            <td><%= link_to "Link para a receita escaneada" %></td>
+
+            <% if appointment.prescription_url? %>
+              <td><%= link_to "Link para a receita escaneada", appointment.prescription_url %></td>
+            <% else %>
+              <td>Sem informação</td>
+            <% end %>
+
             <% if appointment.doctor? %>
               <td><%= appointment.doctor %></td>
             <% else %>
@@ -35,7 +41,12 @@
             <td><%= exam.date.strftime("%d/%m/%Y") %></td>
             <td><%= exam.date.strftime("%H:%M") %></td>
             <td><%= exam.address %></td>
-            <td><%= link_to "Link para a receita escaneada" %></td>
+            <% if exam.prescription_url? %>
+              <td><%= link_to "Link para a receita escaneada", exam.prescription_url %></td>
+            <% else %>
+              <td>Sem informação</td>
+            <% end %>
+
             <% if exam.doctor? %>
               <td><%= exam.doctor %></td>
             <% else %>

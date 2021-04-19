@@ -15,3 +15,17 @@ import "@fortawesome/fontawesome-free/css/all"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+
+$(document).on("turbolinks:load", function(){
+  $("#doubt-button").on("click", function()
+  {
+    alert("Sua dúvida foi enviada com sucesso!");
+  });
+});
+
+$(document).on("turbolinks:load", function(){
+  $("#idea-button").on("click", function(){
+    alert("Sua ideia foi enviada com sucesso!");
+  });
+});

@@ -241,3 +241,13 @@ pt-BR:
         description: Descrição
         address: Endereço
         date: Data
+      doubt:
+        name: Nome
+        subject: Assunto
+        message: Mensagem
+      idea:
+        name: Nome
+        subject: Assunto
+        subject: Assunto
+        person: Você é
+        message: Mensagem

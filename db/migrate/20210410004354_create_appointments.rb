@@ -4,6 +4,7 @@ class CreateAppointments < ActiveRecord::Migration[6.1]
       t.string :pacient, null: false
       t.string :title, null: false
       t.string :doctor
+      t.string :prescription_url
       t.text :description
       t.string :address, null: false
       t.timestamp :date, null: false

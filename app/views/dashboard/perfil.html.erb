@@ -22,4 +22,16 @@
 <h5>Gênero</h5>
 <div><%= @user.gender.capitalize %></div>
 
+<br>
 
+<h5>Gênero</h5>
+<div><%= @user.gender.capitalize %></div>
+
+<br>
+
+<h5>Imagem</h5>
+<% if @user.gender == "masculino" %>
+  <%= image_tag "boy.png" %>
+<% else %>
+  <%= image_tag "girl.png" %>
+<% end %>

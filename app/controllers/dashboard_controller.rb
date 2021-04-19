@@ -1,6 +1,6 @@
 class DashboardController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_user, only: [:perfil, :edit_perfil, :update_perfil, :history]
+  before_action :set_user, only: [:show, :perfil, :edit_perfil, :update_perfil, :history]
 
   layout 'dashboard'
 
@@ -12,7 +12,7 @@ class DashboardController < ApplicationController
 
   def update_perfil
     if @user.update!(user_params)
-      redirect_to perfil_path, flash: { success: 'Dados atualizados com sucesso!' }
+      redirect_to dashboard_perfil_path
     else
       render :edit_perfil
     end

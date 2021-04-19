@@ -61,6 +61,6 @@ class ExamsController < DashboardController
   end
 
   def exam_params
-    params.require(:exam).permit(:pacient, :title, :doctor, :description, :address, :date)
+    params.require(:exam).permit(:pacient, :title, :doctor, :prescription_url, :description, :address, :date)
   end
 end

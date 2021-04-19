@@ -61,6 +61,6 @@ class AppointmentsController < DashboardController
   end
 
   def appointment_params
-    params.require(:appointment).permit(:pacient, :title, :doctor, :description, :address, :date)
+    params.require(:appointment).permit(:pacient, :title, :doctor, :prescription_url, :description, :address, :date)
   end
 end
