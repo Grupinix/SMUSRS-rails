@@ -18,6 +18,13 @@ ActiveStorage.start()
 
 
 $(document).on("turbolinks:load", function(){
+  $("#contact-button").on("click", function()
+  {
+    alert("Recebemos o seu contato!");
+  });
+});
+
+$(document).on("turbolinks:load", function(){
   $("#doubt-button").on("click", function()
   {
     alert("Sua dúvida foi enviada com sucesso!");
