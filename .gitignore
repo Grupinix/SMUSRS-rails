@@ -46,3 +46,5 @@ yarn-debug.log*
 /dataSources/
 /dataSources.local.xml
 /httpRequests/
+
+/config/credentials/production.key
